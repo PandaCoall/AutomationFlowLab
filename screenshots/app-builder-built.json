@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Automation Flow Lab — Business tools that do the repetitive work",
+      "hasCanvas": false,
+      "bodyTextLen": 2886,
+      "bodyTextHash": "a69b7a8005ae1b3dc5a788e93b0d42fcd663368bf461b8c6a8d48e0954b72bea",
+      "bodyTextPrefix": "Skip to content Automation Flow Lab Tools Services Custom Builds",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Automation Flow Lab — Business tools that do the repetitive work",
+      "hasCanvas": false,
+      "bodyTextLen": 2839,
+      "bodyTextHash": "ec5f0e07614cc1895254b3d6252782d8cffb41747db096eba9f5527ad3031172",
+      "bodyTextPrefix": "Skip to content Automation Flow Lab Open menu Automation Flow La",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
