@@ -36,6 +36,20 @@ export type Tool = {
  */
 export const tools: Tool[] = [
   {
+    slug: "cert-batch",
+    name: "Cert Batch",
+    status: "available",
+    summary: "Turn a learner spreadsheet into one certificate PDF per person, then run the send queue without stopping the whole batch.",
+    audience: "Training teams who still build hundreds of certificates by hand or through a flow that dies halfway.",
+    outcome: "Upload the list, check the certificate with the logo, download the PDFs, and retry only the rows that did not send.",
+    features: [
+      "Excel or CSV in, with column mapping",
+      "Live PDF preview, logo on the left or right, three layouts and three colours",
+      "One PDF per learner in a ZIP, plus a result sheet",
+      "A row that fails or is throttled does not stop the rest",
+    ],
+  },
+  {
     slug: "automation-watch",
     name: "Automation Watch",
     status: "coming-soon",

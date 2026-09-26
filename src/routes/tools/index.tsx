@@ -10,7 +10,7 @@ export const Route = createFileRoute("/tools/")({
       {
         name: "description",
         content:
-          "IT tools for automations, analytics, Excel, forms, documents, mail, SharePoint, and technical change requests. Each stays Coming soon until its signed-in workflow works.",
+          "IT tools for automations, analytics, Excel, forms, documents, mail, SharePoint, and technical change requests. Cert Batch is live. The others stay Coming soon until their workflow works.",
       },
     ],
   }),
@@ -33,13 +33,19 @@ function ToolsPage() {
             <p className="mt-3 text-sm font-semibold">Who it is for</p>
             <p className="mt-1 text-sm text-muted">{tool.audience}</p>
             <p className="mt-4 flex-1 text-sm text-muted">{tool.summary}</p>
-            <Link
-              to="/tools/$slug"
-              params={{ slug: tool.slug }}
-              className="mt-5 inline-flex h-11 items-center font-semibold text-primary"
-            >
-              Read about this tool
-            </Link>
+            {tool.slug === "cert-batch" ? (
+              <Link to="/tools/cert-batch" className="mt-5 inline-flex h-11 items-center font-semibold text-primary">
+                Open Cert Batch
+              </Link>
+            ) : (
+              <Link
+                to="/tools/$slug"
+                params={{ slug: tool.slug }}
+                className="mt-5 inline-flex h-11 items-center font-semibold text-primary"
+              >
+                Read about this tool
+              </Link>
+            )}
           </li>
         ))}
       </ul>
